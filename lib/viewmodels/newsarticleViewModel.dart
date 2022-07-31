@@ -12,10 +12,10 @@ class NewsArticleViewModel {
   }
 
   String get imageURL {
-    return _newsArticle.urlToimage;
+    return _newsArticle.urlToImage;
   }
 
-  String get Url {
+  String get url {
     return _newsArticle.url;
   }
 }

@@ -1,3 +1,4 @@
+import 'package:assignment/pages/newList.dart';
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
 
@@ -12,15 +13,16 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     super.initState();
-    //_navigatetohome();
+    _navigatetohome();
   }
 
   _navigatetohome() async {
     await Future.delayed(Duration(milliseconds: 5000), () {});
     Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => MyHomePage(title: 'HOME SCREEN')),
-    );
+        context,
+        MaterialPageRoute(
+          builder: (context) => NewsList(),
+        ));
   }
 
   @override
@@ -63,7 +65,7 @@ class _SplashState extends State<Splash> {
                 onPressed: () => Navigator.pushReplacement(
                   (context),
                   MaterialPageRoute(
-                    builder: (context) => MyHomePage(title: 'MYHOME'),
+                    builder: (context) => NewsList(),
                   ),
                 ),
               ),
